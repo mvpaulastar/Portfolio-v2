@@ -5,44 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio v2</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    </style>
 </head>
-<header class="header">
-    <nav>
-        <ul class="navbar">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Projects</a></li>
-            <li> <a href="#">Contact</a></li>
-            <li> <a href="#">Hobbies</a></li>
-        </ul>
-    </nav>
-</header>
 <body> 
+    <header class="header">
+        <nav>
+            <ul class="navbar">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Projects</a></li>
+                <li> <a href="#">Contact</a></li>
+                <li> <a href="#">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section class="banner">
-            <div>
-                <h1>Punsaporn Paula Sirisompund</h1>
-                <h3>Software Developer</h3>
-                <button class="call-to-action">Learn More</button>
-            </div>
-        </section>
-        
-        <section class="about" hidden>
-            <div>
-                <h2>Hello!</h2>
-                <h3>Welcome to my website!</h3>
-            </div>
+    <section class="banner">
+        <div>
+            <h1>Punsaporn Paula Sirisompund</h1>
+            <h3>Software Developer</h3>
             
-            <div id="self-summary">
-                <h1>image here</h1>
-                <p>I am a growing software developer, taking my first steps into the tech industry. I've got a passion for learning and I pride myself in being able to pick up things quickly!</p>
-                
+            <div class="icons">
+            <a href="https://www.linkedin.com/in/punsaporn-sirisumpund-b3631a140/">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+            </a>
+            
+            <a href="https://github.com/mvpaulastar">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+            </a>
             </div>
-            <div class="skills">
-                <h2>Heres what I know!</h2>
+            <button class="call-to-action">Learn More</button>
+        </div>
+    </section>
+        
+    <section class="about" hidden>
+        <div>
+            <h2>Hello!</h2>
+            <h3>Welcome to my website!</h3>
+        </div>
+            
+        <div id="self-summary">
+            <h1>image here</h1>
+            <p>I am a growing software developer, taking my first steps into the tech industry. I've got a passion for learning and I pride myself in being able to pick up things quickly! I'm capableof working under stress, and in cooperation with others.</p> 
+        </div>
+
+        <div id="education">
+            <h3>Bachelors in Computer Science</h3>
+            <h3>University of Texas San Antonio</h3>
+            <h3>3.36 GPA Overall</h3>
+            <h3>3.55 GPA CompSci Only</h3>
+        </div>
+
+        <div id="skills">
+            <h2>What I've Worked With</h2>
+            <!--Languages-->
+            <div class="icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
             </div>
-            <button class="call-to-action">Back</button>
-        </section>
+            <!--Tech-->
+            <div class="icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+            </div>
+        </div>
+        <button class="call-to-action">Back</button>
+    </section>
 
     <script type="text/javascript" src="./assets/js/jquery-3.6.4.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
