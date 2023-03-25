@@ -6,46 +6,94 @@
 
 html, body{
     text-align: center;
-    background: #32322c;
-    color: white;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 a{
     text-decoration: none;
 }
 
-.header{
-    background: #4C6085;
+.navbar{
+    background: lightskyblue;
     padding: 5px;
     box-shadow: 0px 1px 3px #4C6085;
-}
-
-.navbar{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
 .navbar li a{
-    color: white;
+    color: black;
     opacity: .5;
     transition: .5s linear;
     font-size: x-large;
+    display: block;
 }
 
 .navbar li a:hover{
     opacity: 1;
+    filter: drop-shadow(0px 3px 3px grey);
+}
+
+/*Hamburger menu on mobile*/
+.hamburger{
+    position: fixed;
+    font-size: xx-large;
+    color: lightskyblue;
+    right: 5px;
+    display: none;
+    transition: 1s ease;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.menu-exit{
+    position:absolute;
+    top: 0;
+    right: 15px;
+    font-size: xx-large;
+    display: none;
+    transition: 1s ease;
+}
+
+@media screen and (max-width: 700px){
+    .navbar{
+        position: fixed;
+        flex-direction: column;
+        top: 0px;
+        left: -110%;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .navbar li{
+        border-bottom: 1px solid black;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .menu-exit{
+        display:block;
+    }
 }
 
 .banner{ 
-    background-image: url('./assets/imgs/banner.jpg');
+    background-image: url(/assets/imgs/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    width: 100%;
     height: 100vh;
 }
 
@@ -68,6 +116,10 @@ a{
     cursor: pointer;
 }
 
+h2{
+    text-shadow: 0px 3px 3px grey;
+}
+
 #self-summary{
     display: grid;
     grid-template-rows: 1fr;
@@ -84,6 +136,14 @@ a{
     margin: 15px;
 }
 
+.icons img:hover{
+    filter: drop-shadow(0px 3px 3px grey);
+}
+
+.about{
+    padding-top: 50px;
+}
+
 .about > div{
     margin-top: 25px;
     margin-bottom: 25px;
@@ -91,4 +151,9 @@ a{
 
 #education h3{
     margin: 3px;
+}
+
+#school_logo{
+    width: 25%;
+    height: auto;
 }
