@@ -65,7 +65,6 @@ a{
 
 @media screen and (max-width: 700px){
     .navbar{
-        position: fixed;
         flex-direction: column;
         top: 0px;
         left: -110%;
@@ -84,76 +83,4 @@ a{
     .menu-exit{
         display:block;
     }
-}
-
-.banner{ 
-    background-image: url(/assets/imgs/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 100vh;
-}
-
-.banner div > *{
-    margin: 5px;
-}
-
-.call-to-action{
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #39a0ed;
-    color: rgba(255, 255, 255, 0.5);
-    margin:5px;
-    transition: .5s ease;
-}
-
-.call-to-action:hover{
-    color: black;
-    cursor: pointer;
-}
-
-h2{
-    text-shadow: 0px 3px 3px grey;
-}
-
-#self-summary{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-}
-
-#self-summary p{
-    margin: 20px;
-}
-
-.icons img{
-    width: 50px;
-    height: 50px;
-    margin: 15px;
-}
-
-.icons img:hover{
-    filter: drop-shadow(0px 3px 3px grey);
-}
-
-.about{
-    padding-top: 50px;
-}
-
-.about > div{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-#education h3{
-    margin: 3px;
-}
-
-#school_logo{
-    width: 25%;
-    height: auto;
 }
