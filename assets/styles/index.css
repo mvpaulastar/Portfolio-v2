@@ -68,4 +68,14 @@ h2{
 #school_logo{
     width: 25%;
     height: auto;
+    
+}
+
+#skills{
+    background-color: #39a0ed;
+    transform: skewY(-2deg);
+}
+
+#skills > *{
+    transform: rotateZ(2deg);
 }
