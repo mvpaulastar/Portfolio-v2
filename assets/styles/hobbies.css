@@ -1,0 +1,24 @@
+section{
+    padding-top: 50px;
+}
+
+.hobby-images{
+    background-color: #39a0ed;
+    transform: skewY(-2deg);
+}
+
+.hobby-images > *{
+    transform: skewY(2deg);
+}
+.list li{
+    padding-bottom: 10px;
+}
+
+img{
+    width: 15%;
+    height: auto;
+}
+
+img:hover{
+    filter: drop-shadow(0px 3px 3px grey);
+}
