@@ -78,22 +78,26 @@ img:hover{
     position: fixed;
     font-size: xx-large;
     color: lightskyblue;
-    right: 5px;
+    right: 20px;
+    top: 20px;
     display: none;
+    z-index: 997;
     transition: 1s ease;
 }
 
-.hamburger:hover{
+.hamburger:hover, .menu-exit:hover{
     cursor: pointer;
     color: black;
 }
 
 .menu-exit{
     position:absolute;
-    top: 0;
-    right: 15px;
+    color: darkslategrey;
+    top: 20px;
+    right: 20px;
     font-size: xx-large;
     display: none;
+    z-index: 999;
     transition: 1s ease;
 }
 
@@ -104,6 +108,7 @@ img:hover{
         left: -110%;
         bottom: 0px;
         right: 0px;
+        z-index: 998;
     }
 
     .navbar li{

@@ -9,9 +9,10 @@ section{
 }
 
 .row{
+    margin: 25px 0px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 25px;
     justify-content: center;
 }
 .card{
@@ -21,14 +22,14 @@ section{
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    transition: all .2s ease-in-out; 
 }
 
 a h4{
     color: blue;
 }
 
-.card-body > *:not(hr){
-    display: block;
+.card-body *:not(hr, a){
     margin: 5px;
     padding: 5px;
 }
@@ -38,4 +39,15 @@ a h4{
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        width: 100%;
+        height: fit-content;
+    }
 }

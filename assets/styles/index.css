@@ -51,3 +51,10 @@
     width: 25%;
     height: auto;
 }
+
+#paula{
+    width: 50%;
+    height: auto;
+    border-radius: 30%;
+    justify-self: center;
+}
