@@ -1,3 +1,8 @@
+/*Transition animation on page load*/
+$(window).on('load', () => {
+    $("body").slideDown(500);
+});
+
 /*Responsive Mobile Menu*/
 $(".hamburger").click( () => {
     $(".navbar").animate({left: "0px"});
@@ -10,3 +15,12 @@ $(window).resize( () => {
         $(".navbar").animate({left: "0px"})
     }
 });
+
+//Animation change on link click
+$("a").click( (e) => {
+    e.preventDefault();
+    let location = e.currentTarget.href;
+    $("body").slideUp(500, ()=>{
+        window.location.href = location;
+    })
+})
