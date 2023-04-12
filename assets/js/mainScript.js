@@ -1,6 +1,6 @@
 /*Transition animation on page load*/
 $(window).on('load', () => {
-    $("body").slideDown(500);
+    $("body").slideDown(250);
 });
 
 /*Responsive Mobile Menu*/
@@ -20,7 +20,7 @@ $(window).resize( () => {
 $("a").click( (e) => {
     e.preventDefault();
     let location = e.currentTarget.href;
-    $("body").slideUp(500, ()=>{
+    $("body").slideUp(250, ()=>{
         window.location.href = location;
     })
 })

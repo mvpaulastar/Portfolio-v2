@@ -122,4 +122,15 @@ img:hover{
     .menu-exit{
         display:block;
     }
+
+    .dbl-col{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        place-items: center;
+    }
+
+    .dbl-col *{
+        margin: 1rem;
+    }
 }
